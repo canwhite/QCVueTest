@@ -28,7 +28,7 @@
             </BookList>
         </div>
 
-        <modal-dialog v-if="vm.showDialog">
+        <div class="section" v-if="vm.showDialog">
 
             <Dialog @closeDialog="close">
                 <span>{{selected.title}}</span>
@@ -37,7 +37,7 @@
             </Dialog>
 
 
-        </modal-dialog>
+        </div>
 
 
     </div>
