@@ -28,13 +28,16 @@
             </BookList>
         </div>
 
-        <div class="section" v-if="vm.showDialog">
+        <modal-dialog v-if="vm.showDialog">
 
-            <Dialog @closeDialog="close" :bookName="selected.title">
-
-
+            <Dialog @closeDialog="close">
+                <span>{{selected.title}}</span>
+                <span>测试</span>
+                <span slot="heading">第一作者:{{selected.authors[0]}}</span>
             </Dialog>
-        </div>
+
+
+        </modal-dialog>
 
 
     </div>

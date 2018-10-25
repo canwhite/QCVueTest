@@ -7,47 +7,14 @@
                 <img :src="slide.img_url"/>
             </router-link>
         </div>
+
         <div class="swiper-pagination"
-             ref="pagination"></div>
+             ref="pagination">
+        </div>
+
     </div>
 </template>
-<style>
-    .swiper-container{
-        width:100%;
-        margin:0;
-        padding:0;
 
-    }
-    .swiper-wrapper {
-        height: 200px;
-
-    }
-    .swiper-slide img {
-        max-width: 100%;
-
-    }
-    .swiper-slide {
-        text-align: center;
-        background: #fff;
-
-
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-    }
-
-
-</style>
 
 <script type="text/ecmascript-6">
 
@@ -70,3 +37,41 @@
         }
     }
 </script>
+
+<style>
+    .swiper-container{
+        width:100%;
+        margin:0;
+        padding:0;
+
+    }
+    .swiper-wrapper {
+        height: 200px;
+
+    }
+    .swiper-slide img {
+        max-width: 100%;
+
+    }
+    .swiper-slide {
+        text-align: center;
+        background: #fff;
+
+
+        /* 垂直居中幻灯片的样式设置 */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+
+</style>

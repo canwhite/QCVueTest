@@ -8,9 +8,16 @@
       </div>
 
 
+
       <div class="message">
-        <span>{{bookName}}</span>
+        <slot></slot>
       </div>
+
+      <div class="author">
+        <slot name="heading"></slot>
+      </div>
+
+
 
 
     </div>
