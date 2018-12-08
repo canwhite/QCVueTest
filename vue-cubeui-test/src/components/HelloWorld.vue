@@ -46,6 +46,8 @@ import morning from '../assets/logo.png';
 import vegetables from '../assets/logo.png';
 import waterPlant from '../assets/logo.png';
 
+//压缩方法的导入
+import compress from '../modules/image'
 
 export default {
   name: 'HelloWorld',
@@ -100,6 +102,8 @@ export default {
   },
 
   methods: {
+
+    //压缩图片并通过base64上传，也可以只是压缩，可以和下边配合
     processFile(file, next) {
       compress(file, {
         compress: {
@@ -119,6 +123,12 @@ export default {
 
 
     //这个是直接上传用到的方法
+    /*
+    <cube-upload
+      action="//jsonplaceholder.typicode.com/photos/"
+      :simultaneous-uploads="1"
+      @files-added="filesAdded" />
+    */
     filesAdded(files) {
       let hasIgnore = false
       const maxSize = 5 * 1024 * 1024 // 5M
